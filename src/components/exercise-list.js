@@ -25,7 +25,7 @@ const Exercise = props => (
     }
   
     componentDidMount() {
-      axios.get('http://localhost:5000/excercise/get')
+      axios.get('http://deep-mern.herokuapp.com/excercise/get')
         .then(response => {
           this.setState({ exercises: response.data })
         })
@@ -35,7 +35,7 @@ const Exercise = props => (
     }
   
     deleteExercise(id) {
-      axios.delete('http://localhost:5000/excercise/'+id)
+      axios.delete('http://deep-mern.herokuapp.com/excercise/'+id)
         .then(response => { console.log(response.data)});
   
       this.setState({
