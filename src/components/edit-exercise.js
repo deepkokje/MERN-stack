@@ -23,7 +23,7 @@ export default class EditExercise extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://deep-mern.herokuapp.com/excercise/'+this.props.match.params.id)
+    axios.get('https://deep-mern.herokuapp.com/excercise/'+this.props.match.params.id)
       .then(response => {
         this.setState({
           username: response.data.username,
@@ -36,7 +36,7 @@ export default class EditExercise extends Component {
         console.log(error);
       })
 
-    axios.get('http://deep-mern.herokuapp.com/users/get')
+    axios.get('https://deep-mern.herokuapp.com/users/get')
       .then(response => {
         if (response.data.length > 0) {
           this.setState({

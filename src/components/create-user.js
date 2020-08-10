@@ -30,7 +30,7 @@ export default class CreateUser extends Component{
     
         console.log(user);
 
-        axios.post('http://deep-mern.herokuapp.com/users/add',user)
+        axios.post('https://deep-mern.herokuapp.com/users/add',user)
         .then(res=>console.log(res.data))
     
         this.setState({

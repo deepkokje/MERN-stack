@@ -21,7 +21,7 @@ export default class CreateExercise extends Component{
         }
     }
     componentDidMount(){
-        axios.get("http://deep-mern.herokuapp.com/users/get")
+        axios.get("https://deep-mern.herokuapp.com/users/get")
         .then(res=>{
           if(res.data.length > 0 ){
             this.setState({
@@ -66,7 +66,7 @@ export default class CreateExercise extends Component{
         }
     
         console.log(exercise);
-        axios.post("http://deep-mern.herokuapp.com/excercise/add",exercise)
+        axios.post("https://deep-mern.herokuapp.com/excercise/add",exercise)
         .then(res=>console.log(res.data))
         window.location = '/';
     }
