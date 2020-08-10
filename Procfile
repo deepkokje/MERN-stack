@@ -1,0 +1,1 @@
+Web: node server.js && cd.. && npm install && npm run build
